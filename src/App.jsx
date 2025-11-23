@@ -23,8 +23,8 @@ const router = createBrowserRouter([
       {path:'/infinite_scroll',element: <InfiniteScroll />}
     ]
   },
-  // {path:'*', element: <Error404 />}
-]);
+  {path:'*', element: <Error404 />}
+],{ basename: '/tanstack_query_crud' });
 const App = () => {
   // QueryClientProvider coponent provide a QueryClient instance to entire react application.
   // this make the query client available via react context api so all the component in the tree
